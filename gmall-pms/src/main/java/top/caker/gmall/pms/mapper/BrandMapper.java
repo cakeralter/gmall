@@ -1,7 +1,7 @@
 package top.caker.gmall.pms.mapper;
 
-import top.caker.gmall.pms.entity.Brand;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import top.caker.gmall.pms.entity.Brand;
 
 /**
  * <p>

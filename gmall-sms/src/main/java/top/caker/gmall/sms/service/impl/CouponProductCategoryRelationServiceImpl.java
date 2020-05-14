@@ -1,11 +1,11 @@
 package top.caker.gmall.sms.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Component;
 import top.caker.gmall.sms.entity.CouponProductCategoryRelation;
 import top.caker.gmall.sms.mapper.CouponProductCategoryRelationMapper;
 import top.caker.gmall.sms.service.CouponProductCategoryRelationService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.alibaba.dubbo.config.annotation.Service;
 
 /**
  * <p>

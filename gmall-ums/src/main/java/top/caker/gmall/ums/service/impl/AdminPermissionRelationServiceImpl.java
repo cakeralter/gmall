@@ -1,11 +1,11 @@
 package top.caker.gmall.ums.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Component;
 import top.caker.gmall.ums.entity.AdminPermissionRelation;
 import top.caker.gmall.ums.mapper.AdminPermissionRelationMapper;
 import top.caker.gmall.ums.service.AdminPermissionRelationService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.alibaba.dubbo.config.annotation.Service;
 
 /**
  * <p>

@@ -1,7 +1,7 @@
 package top.caker.gmall.oms.mapper;
 
-import top.caker.gmall.oms.entity.OrderItem;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import top.caker.gmall.oms.entity.OrderItem;
 
 /**
  * <p>

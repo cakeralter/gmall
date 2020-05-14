@@ -1,7 +1,7 @@
 package top.caker.gmall.cms.service;
 
-import top.caker.gmall.cms.entity.Topic;
 import com.baomidou.mybatisplus.extension.service.IService;
+import top.caker.gmall.cms.entity.Topic;
 
 /**
  * <p>

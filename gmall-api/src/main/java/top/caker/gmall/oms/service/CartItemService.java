@@ -1,7 +1,7 @@
 package top.caker.gmall.oms.service;
 
-import top.caker.gmall.oms.entity.CartItem;
 import com.baomidou.mybatisplus.extension.service.IService;
+import top.caker.gmall.oms.entity.CartItem;
 
 /**
  * <p>

@@ -1,7 +1,7 @@
 package top.caker.gmall.sms.service;
 
-import top.caker.gmall.sms.entity.FlashPromotionLog;
 import com.baomidou.mybatisplus.extension.service.IService;
+import top.caker.gmall.sms.entity.FlashPromotionLog;
 
 /**
  * <p>

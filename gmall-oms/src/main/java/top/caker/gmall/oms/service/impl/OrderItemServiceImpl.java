@@ -1,11 +1,11 @@
 package top.caker.gmall.oms.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Component;
 import top.caker.gmall.oms.entity.OrderItem;
 import top.caker.gmall.oms.mapper.OrderItemMapper;
 import top.caker.gmall.oms.service.OrderItemService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.alibaba.dubbo.config.annotation.Service;
 
 /**
  * <p>

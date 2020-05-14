@@ -1,7 +1,7 @@
 package top.caker.gmall.ums.service;
 
-import top.caker.gmall.ums.entity.IntegrationConsumeSetting;
 import com.baomidou.mybatisplus.extension.service.IService;
+import top.caker.gmall.ums.entity.IntegrationConsumeSetting;
 
 /**
  * <p>

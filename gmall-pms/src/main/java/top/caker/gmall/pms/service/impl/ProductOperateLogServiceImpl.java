@@ -1,11 +1,11 @@
 package top.caker.gmall.pms.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Component;
 import top.caker.gmall.pms.entity.ProductOperateLog;
 import top.caker.gmall.pms.mapper.ProductOperateLogMapper;
 import top.caker.gmall.pms.service.ProductOperateLogService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.alibaba.dubbo.config.annotation.Service;
 
 /**
  * <p>

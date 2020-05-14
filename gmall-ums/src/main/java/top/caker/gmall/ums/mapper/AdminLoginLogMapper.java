@@ -1,7 +1,7 @@
 package top.caker.gmall.ums.mapper;
 
-import top.caker.gmall.ums.entity.AdminLoginLog;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import top.caker.gmall.ums.entity.AdminLoginLog;
 
 /**
  * <p>

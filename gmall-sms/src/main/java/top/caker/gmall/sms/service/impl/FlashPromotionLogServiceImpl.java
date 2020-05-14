@@ -1,11 +1,11 @@
 package top.caker.gmall.sms.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Component;
 import top.caker.gmall.sms.entity.FlashPromotionLog;
 import top.caker.gmall.sms.mapper.FlashPromotionLogMapper;
 import top.caker.gmall.sms.service.FlashPromotionLogService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.alibaba.dubbo.config.annotation.Service;
 
 /**
  * <p>

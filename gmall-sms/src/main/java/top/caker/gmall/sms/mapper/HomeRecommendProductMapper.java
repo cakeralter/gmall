@@ -1,7 +1,7 @@
 package top.caker.gmall.sms.mapper;
 
-import top.caker.gmall.sms.entity.HomeRecommendProduct;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import top.caker.gmall.sms.entity.HomeRecommendProduct;
 
 /**
  * <p>

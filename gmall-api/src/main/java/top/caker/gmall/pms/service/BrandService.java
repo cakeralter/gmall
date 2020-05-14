@@ -1,7 +1,7 @@
 package top.caker.gmall.pms.service;
 
-import top.caker.gmall.pms.entity.Brand;
 import com.baomidou.mybatisplus.extension.service.IService;
+import top.caker.gmall.pms.entity.Brand;
 
 /**
  * <p>
