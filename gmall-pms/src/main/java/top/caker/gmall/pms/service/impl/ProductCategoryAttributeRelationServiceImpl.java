@@ -1,10 +1,11 @@
 package top.caker.gmall.pms.service.impl;
 
+import org.springframework.stereotype.Component;
 import top.caker.gmall.pms.entity.ProductCategoryAttributeRelation;
 import top.caker.gmall.pms.mapper.ProductCategoryAttributeRelationMapper;
 import top.caker.gmall.pms.service.ProductCategoryAttributeRelationService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.springframework.stereotype.Service;
+import com.alibaba.dubbo.config.annotation.Service;
 
 /**
  * <p>
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Service;
  * @author Lfy
  * @since 2020-05-12
  */
+@Component
 @Service
 public class ProductCategoryAttributeRelationServiceImpl extends ServiceImpl<ProductCategoryAttributeRelationMapper, ProductCategoryAttributeRelation> implements ProductCategoryAttributeRelationService {
 

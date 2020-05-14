@@ -7,6 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.IOException;
 
+/**
+ * @author cakeralter
+ */
 @EnableDubbo
 @MapperScan(basePackages = "top.caker.gmall.pms.mapper")
 @SpringBootApplication
