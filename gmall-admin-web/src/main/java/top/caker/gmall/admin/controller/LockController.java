@@ -25,4 +25,9 @@ public class LockController {
     public String lock() {
         return lockService.lock();
     }
+
+    @GetMapping("/redisson")
+    public String redisson() {
+        return lockService.redissonLock();
+    }
 }

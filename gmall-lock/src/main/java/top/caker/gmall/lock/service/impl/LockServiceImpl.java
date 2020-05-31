@@ -1,6 +1,8 @@
 package top.caker.gmall.lock.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import org.redisson.api.RLock;
+import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
@@ -23,6 +25,8 @@ public class LockServiceImpl implements LockService {
 
     @Autowired
     private StringRedisTemplate redisTemplate;
+    @Autowired
+    private RedissonClient client;
 
     /**
      * 分布式锁使用：
@@ -40,12 +44,40 @@ public class LockServiceImpl implements LockService {
                 .setIfAbsent(LockCostant.KEY, token, LockCostant.EXPIRE, TimeUnit.SECONDS);
         if (Objects.equals(lock, true)) {
             // TODO 业务
+            increment();
 
             // 释放锁
-            Object execute = redisTemplate.execute(new DefaultRedisScript<>(LockCostant.DELETE_SCRIPT, Long.class),
+            Long execute = redisTemplate.execute(new DefaultRedisScript<>(LockCostant.DELETE_SCRIPT, Long.class),
                     Collections.singletonList(LockCostant.KEY), token);
             System.out.println(execute);
+        } else {
+            lock();
         }
-        return "ok";
+        return "OK";
+    }
+
+    @Override
+    public String redissonLock() {
+        RLock lock = client.getLock(LockCostant.KEY);
+        try {
+            lock.lock();
+
+            // TODO 业务
+            increment();
+
+            return "OK";
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    /**
+     * 模拟业务
+     */
+    private void increment() {
+        String num = redisTemplate.opsForValue().get("num");
+        Integer n = Integer.valueOf(num);
+        n++;
+        redisTemplate.opsForValue().set("num", String.valueOf(n));
     }
 }

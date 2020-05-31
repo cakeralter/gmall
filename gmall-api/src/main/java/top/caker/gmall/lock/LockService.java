@@ -7,4 +7,6 @@ package top.caker.gmall.lock;
 public interface LockService {
 
     String lock();
+
+    String redissonLock();
 }
